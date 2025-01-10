@@ -6,7 +6,7 @@ import org.junit.jupiter.api.BeforeAll;
 
 import static com.codeborne.selenide.Selenide.closeWebDriver;
 
-public class DemoqaFormBase {
+public class BaseTest {
 
     @BeforeAll
     static void setBrowserConfig() {
@@ -14,7 +14,6 @@ public class DemoqaFormBase {
         Configuration.browserSize = "1920x1080";
         Configuration.pageLoadStrategy = "eager";
         Configuration.baseUrl = "https://demoqa.com";
-        Configuration.holdBrowserOpen = true;
     }
 
     @AfterEach
